@@ -14,10 +14,12 @@ document.querySelector("button").addEventListener("click", () => {
 
   const btn = document.createElement("button");
   const btnText = document.createTextNode("Mark as Done");
-
   btn.appendChild(btnText);
 
   document.querySelector("section").appendChild(para1);
   document.querySelector("section").appendChild(para2);
   document.querySelector("section").appendChild(btn);
+
+  task.value = "";
+  dis.value = "";
 });
